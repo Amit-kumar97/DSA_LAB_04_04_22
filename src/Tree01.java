@@ -69,6 +69,7 @@ public class Tree01 {
         if(root==null)
             return;
 
+        //--------[LDR]
         inOrderTraversal(root.left);
         System.out.print(root.data+" ");
         inOrderTraversal(root.right);
@@ -81,6 +82,7 @@ public class Tree01 {
         if(root==null)
             return;
 
+        //---------[DLR]
         System.out.print(root.data+" ");
         preOrderTraversal(root.left);
         preOrderTraversal(root.right);
@@ -93,6 +95,7 @@ public class Tree01 {
         if(root==null)
             return;
 
+        //-------[LRD]
         postOrderTraversal(root.left);
         postOrderTraversal(root.right);
         System.out.print(root.data+" ");
